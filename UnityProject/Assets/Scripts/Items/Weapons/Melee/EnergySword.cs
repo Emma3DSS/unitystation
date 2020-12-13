@@ -19,8 +19,8 @@ public class EnergySword : NetworkBehaviour, ICheckedInteractable<HandActivate>,
 	private ItemSize offSize;
 
 	[SerializeField]
-	private string activatedHitSound = "blade1";
-	private string offHitSound;
+	private AddressableAudioSource activatedHitSound = null;
+	private AddressableAudioSource offHitSound;
 
 	[SerializeField]
 	[Range(0, 100)]
